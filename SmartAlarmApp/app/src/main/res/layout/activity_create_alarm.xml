@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.CreateAlarm">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="280dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/alarm_clock_icon"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/btn_speech"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="right|bottom"
+        app:tint="@color/colorPrimaryDark"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_volume_up_24"
+   />
+    <ImageView
+        android:id="@+id/btn_record"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="start|bottom"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_mic_black_48dp"
+        app:tint="@color/colorPrimaryDark" />
+</androidx.cardview.widget.CardView>
+
+
+        <EditText
+            android:id="@+id/editext_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12sp"
+            android:background="@null"
+            android:gravity="top|start"
+            android:hint="@string/description_alarm"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="12sp" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_alarm_white_24dp"
+            tools:ignore="VectorDrawableCompat"
+            app:tint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/et_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:padding="10dp"
+            android:background="@null"
+            android:hint="@string/time_alarm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/ic_baseline_date_range_24"
+            tools:ignore="VectorDrawableCompat"
+            app:tint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:padding="10dp"
+            android:background="@null"
+            android:hint="@string/date_alarm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" />
+
+
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/spinner_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:gravity="center"
+        android:padding="15sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/btn_save"
+        android:textColor="@color/white"
+        android:text="@string/save_alarm"
+        android:background="@drawable/round_blue_button"
+        android:textSize="20sp"
+    />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="@string/cancel_alarm"
+        android:background="@drawable/round_blue_button"
+        android:textSize="20sp"
+   />
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:textColor="@color/white"
+        android:text="@string/delete_alarm"
+        android:background="@drawable/round_blue_button"
+        android:textSize="20sp"
+        android:visibility="gone"
+
+        />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SmartAlarm</string>
+    <string name="add_Alarm">Add Alarm</string>
+    <string name="text_on">on</string>
+    <string name="text_of">off</string>
+    <string name="description_alarm">Enter Message</string>
+    <string name="time_alarm">Time</string>
+    <string name="date_alarm">Date</string>
+    <string name="save_alarm">Save</string>
+    <string name="cancel_alarm">Cancel</string>
+    <string name="delete_alarm">Delete</string>
+
+    <string-array name="spinnerRepeat">
+        <item>Once only</item>
+        <item>Daily</item>
+        <item>monthly</item>
+        >
+    </string-array>
+</resources>

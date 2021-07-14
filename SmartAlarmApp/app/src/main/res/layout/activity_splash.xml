@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.SplashActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="280dp"
+        android:layout_height="240dp"
+        android:src="@drawable/alarm_clock_icon"
+
+ />
+
+      <TextView
+          android:id="@+id/tv_app_name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="32dp"
+          android:gravity="center"
+          android:text="@string/app_name"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="35sp"
+          android:textStyle="bold"
+
+          />
+
+</LinearLayout>
